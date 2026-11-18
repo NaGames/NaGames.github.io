@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T14:08:34.326Z",
+  "generatedAt": "2026-11-18T22:14:38.823Z",
   "games": {
     "blacksteel-arms-tycoon": {
       "universeId": 6292430419,
@@ -10,14 +10,14 @@
       "favorites": 8,
       "maxPlayers": 8,
       "thumbnail": "https://tr.rbxcdn.com/180DAY-5d086291621affac427980fbb3c58e80/768/432/Image/Png/noFilter",
-      "fetchedAt": "2026-11-18T14:08:34.325Z"
+      "fetchedAt": "2026-11-18T22:14:38.823Z"
     }
   },
   "group": {
     "id": "34650790",
     "name": "NaGames",
     "memberCount": 6,
-    "fetchedAt": "2026-11-18T14:08:33.618Z"
+    "fetchedAt": "2026-11-18T22:14:38.535Z"
   },
   "team": {
     "60849547": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-EFF1BD6C764377FF9C4DA767A4EC446F-Png/150/150/AvatarHeadshot/Png/noFilter",
