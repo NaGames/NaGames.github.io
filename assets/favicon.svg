@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="NaGames mascot">
+  <defs>
+    <clipPath id="nug">
+      <path d="M30 12C42 5 58 6 68 13c10-2 20 5 23 16 5 9 4 21-1 30 2 12-6 23-18 27-10 7-24 8-34 3-12-1-22-9-25-20-7-8-8-21-3-31 2-12 10-22 20-26Z"/>
+    </clipPath>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8C06A"/>
+      <stop offset="0.55" stop-color="#D4A24C"/>
+      <stop offset="1" stop-color="#A87C32"/>
+    </linearGradient>
+  </defs>
+
+  <!-- body -->
+  <path d="M30 12C42 5 58 6 68 13c10-2 20 5 23 16 5 9 4 21-1 30 2 12-6 23-18 27-10 7-24 8-34 3-12-1-22-9-25-20-7-8-8-21-3-31 2-12 10-22 20-26Z" fill="url(#body)"/>
+
+  <g clip-path="url(#nug)">
+    <!-- shadow along the lower-right edge -->
+    <path d="M62 100h45V40C98 62 84 86 62 100Z" fill="#6B4A1E" opacity="0.38"/>
+    <!-- highlight on the upper-left -->
+    <ellipse cx="34" cy="28" rx="19" ry="12" fill="#F0D089" opacity="0.5" transform="rotate(-24 34 28)"/>
+  </g>
+
+  <!-- deadpan face -->
+  <ellipse cx="37" cy="46" rx="4.6" ry="6.4" fill="#1A1208"/>
+  <ellipse cx="63" cy="46" rx="4.6" ry="6.4" fill="#1A1208"/>
+  <rect x="34" y="65" width="32" height="5.4" rx="2.7" fill="#1A1208"/>
+</svg>
