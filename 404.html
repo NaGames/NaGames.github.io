@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found - NaGames</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!--
+  Deliberately self-contained: no external CSS, no JS, inline mascot.
+
+  GitHub Pages serves this file for a miss at ANY path depth, so a relative
+  href like "css/style.css" would resolve against the broken URL and fail.
+  Inlining is the only thing guaranteed to render correctly everywhere.
+
+  The nav links below are root-absolute. If you deploy to a PROJECT page
+  (username.github.io/NaGamesWeb/) rather than a user page, prefix them with
+  /NaGamesWeb - see the README.
+-->
+<style>
+  :root {
+    --bg: #0A0A0B; --gold: #D4A24C; --gold-bright: #E8C06A;
+    --text: #F2EFE9; --muted: #9A958C; --border: rgba(212,162,76,0.45);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: grid; place-content: center; text-align: center;
+    padding: 40px 16px;
+    background: var(--bg); color: var(--text);
+    font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65;
+  }
+  svg { width: 112px; height: 112px; margin: 0 auto 26px; display: block; }
+  h1 {
+    font-family: "Anton", "Arial Black", sans-serif; font-weight: 400;
+    text-transform: uppercase; line-height: 0.95;
+    font-size: clamp(3rem, 14vw, 6rem); margin: 0 0 4px; color: var(--gold);
+  }
+  h2 {
+    font-family: "Anton", "Arial Black", sans-serif; font-weight: 400;
+    text-transform: uppercase; font-size: clamp(1.3rem, 4vw, 1.9rem);
+    margin: 0 0 14px;
+  }
+  p { color: var(--muted); max-width: 44ch; margin: 0 auto 30px; }
+  .row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  a {
+    display: inline-flex; align-items: center; padding: 13px 24px;
+    border-radius: 999px; font-weight: 700; font-size: 0.95rem;
+    text-decoration: none; border: 1px solid transparent;
+    transition: transform .18s, background .18s, border-color .18s;
+  }
+  a:hover { transform: translateY(-2px); }
+  .primary { background: var(--gold); color: #0A0A0B; }
+  .primary:hover { background: var(--gold-bright); }
+  .ghost { border-color: var(--border); color: var(--gold); }
+  .ghost:hover { background: rgba(212,162,76,0.08); }
+  :focus-visible { outline: 2px solid var(--gold-bright); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="The NaGames mascot, unimpressed">
+    <defs>
+      <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#E8C06A"/>
+        <stop offset=".55" stop-color="#D4A24C"/>
+        <stop offset="1" stop-color="#A87C32"/>
+      </linearGradient>
+    </defs>
+    <path d="M30 12C42 5 58 6 68 13c10-2 20 5 23 16 5 9 4 21-1 30 2 12-6 23-18 27-10 7-24 8-34 3-12-1-22-9-25-20-7-8-8-21-3-31 2-12 10-22 20-26Z" fill="url(#b)"/>
+    <ellipse cx="37" cy="46" rx="4.6" ry="6.4" fill="#1A1208"/>
+    <ellipse cx="63" cy="46" rx="4.6" ry="6.4" fill="#1A1208"/>
+    <rect x="34" y="65" width="32" height="5.4" rx="2.7" fill="#1A1208"/>
+  </svg>
+
+  <h1>404</h1>
+  <h2>Nothing here</h2>
+  <p>This page does not exist. It may never have. Either way, there is nothing to see, and we are both a little disappointed.</p>
+
+  <div class="row">
+    <a class="primary" href="/">Back to the start</a>
+    <a class="ghost" href="/games.html">See the games</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>NaGames - Roblox game studio</title>
+<meta name="description" content="NaGames is a Roblox game studio. Play our games, grab the latest codes, and read what we just shipped.">
+
+<!-- TODO: once you have a domain, change these to absolute https:// URLs.
+     Discord and X need the full URL to show a link preview. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="NaGames - Roblox game studio">
+<meta property="og:description" content="We make Roblox games. Some of them are good.">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="data/content.js" defer></script>
+<script src="js/site.js" defer></script>
+<script src="js/roblox.js" defer></script>
+<script src="js/render.js" defer></script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <img class="hero__mascot" src="assets/logo.svg" alt="The NaGames mascot" width="148" height="148">
+      <h1>We make<br><span class="accent">worlds</span></h1>
+      <p class="hero__sub" data-render="field" data-field="studio.tagline"></p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="games.html">Play our games</a>
+        <a class="btn btn--ghost" href="codes.html">Get the codes</a>
+      </div>
+      <div data-render="stats"></div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Our lineup</p>
+          <h2>The games</h2>
+        </div>
+        <a class="btn btn--ghost btn--sm" href="games.html">See all</a>
+      </div>
+      <div data-render="games" data-featured="true"></div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shipped recently</p>
+          <h2>Latest updates</h2>
+        </div>
+        <a class="btn btn--ghost btn--sm" href="updates.html">All updates</a>
+      </div>
+      <div data-render="updates" data-limit="3"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Come be loud with us</h2>
+        <p class="lede">Codes drop there first, and we actually read the suggestions.</p>
+        <div data-render="social"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>About - NaGames</title>
+<meta name="description" content="Who NaGames is, what we build on Roblox, and the people behind it.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="About - NaGames">
+<meta property="og:description" content="Who NaGames is and the people behind it.">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="data/content.js" defer></script>
+<script src="js/site.js" defer></script>
+<script src="js/roblox.js" defer></script>
+<script src="js/render.js" defer></script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main id="main">
+
+  <section class="section">
+    <div class="wrap">
+      <img src="assets/logo.svg" alt="" width="104" height="104" style="margin-bottom:28px">
+      <p class="eyebrow">The studio</p>
+      <h1>About NaGames</h1>
+
+      <div data-render="story"></div>
+
+      <div class="stats" style="max-width:640px;margin-left:0">
+        <div class="stat">
+          <div class="stat__num" data-render="field" data-field="studio.founded"></div>
+          <div class="stat__label">Founded</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-render="game-count"></div>
+          <div class="stat__label">Games published</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">The people</p>
+          <h2>Team</h2>
+        </div>
+      </div>
+      <div data-render="team"></div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Say hello</h2>
+        <p class="lede">
+          Business enquiries, press, or just telling us a game is broken.
+        </p>
+        <div data-render="social"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+</body>
+</html>
