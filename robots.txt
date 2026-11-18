@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO: replace with your real domain once you have one.
 Sitemap: https://nagames.github.io/sitemap.xml

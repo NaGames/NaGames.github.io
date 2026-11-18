@@ -45,9 +45,19 @@ window.NAGAMES = {
       {
         by: "redredgavin",
         text:
-          "TODO: redredgavin's part goes here. Drop it in and it appears " +
-          "directly under imwood04's, with his own byline and avatar. " +
-          "Delete this whole entry if he would rather not have one.",
+          "I've always been the one coming up with ideas for projects - " +
+          "usually more of them than I can keep up with. A few have turned " +
+          "into actual things over the years, from a Discord music bot to a " +
+          "sound pack tool for games like GTA 5.\n\n" +
+
+          "I just like making things and seeing where an idea goes, whether " +
+          "that's a small side project or something bigger. Lately that's " +
+          "meant tagging along on NaGames, helping bring ideas to life with " +
+          "my best friend and getting stuck into Blacksteel Arms.\n\n" +
+
+          "I'm here for the same reason I always have been: building things, " +
+          "trying ideas out, and hopefully making something people enjoy as " +
+          "much as we enjoy making it.",
       },
     ],
   },

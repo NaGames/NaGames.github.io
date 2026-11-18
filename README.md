@@ -152,36 +152,35 @@ If you'd rather set the numbers by hand, just fill in `visits` and `players` in
 
 ---
 
-## Deploying to GitHub Pages
+## Deploying
 
-1. Push this repo to GitHub.
-2. **Settings → Pages → Build and deployment → Deploy from a branch.**
-3. Branch `master`, folder `/ (root)`. Save.
-4. **Settings → Actions → General → Workflow permissions → Read and write**, so the
-   refresh workflow can commit its results.
+This repo is `NaGames/NaGames.github.io`, so it's a GitHub **user page** and the
+site is served from the repository root at <https://nagames.github.io>. No path
+prefix, which is why the root-absolute links in `404.html` work as written.
+
+Two settings to switch on in the repo, once:
+
+1. **Settings → Pages → Build and deployment → Deploy from a branch**, branch
+   `main`, folder `/ (root)`.
+2. **Settings → Actions → General → Workflow permissions → Read and write**, so
+   the refresh workflow can commit `data/roblox.json` back to the repo. Without
+   this the workflow runs but fails at the final push step.
 
 `.nojekyll` is already present, which stops GitHub stripping files.
 
-### Custom domain
+After that, every `git push` to `main` republishes the site.
 
-Buy the domain, then add a file called `CNAME` at the repo root containing only:
+### Custom domain, later
+
+Add a file called `CNAME` at the repo root containing only the domain:
 
 ```
 nagames.com
 ```
 
-Point a `CNAME` DNS record at `<your-username>.github.io`, then tick **Enforce HTTPS**
-in Settings → Pages.
-
-### If you deploy to a project page
-
-A **user page** (`nagames.github.io`) works as-is. A **project page**
-(`username.github.io/NaGamesWeb/`) needs two edits, because `404.html` is served at
-arbitrary path depths and therefore uses root-absolute links:
-
-- in `404.html`, change `href="/"` → `href="/NaGamesWeb/"` and
-  `href="/games.html"` → `href="/NaGamesWeb/games.html"`
-- in `robots.txt` and `sitemap.xml`, update the URLs
+Point a `CNAME` DNS record at `nagames.github.io`, then tick **Enforce HTTPS** in
+Settings → Pages. You'd also need to update the absolute URLs in `robots.txt`,
+`sitemap.xml` and the `og:url`/`og:image` tags in each HTML file.
 
 ---
 
@@ -191,19 +190,11 @@ arbitrary path depths and therefore uses root-absolute links:
       with full patch notes, but `date: ""`. Fill them in as `YYYY-MM-DD` and
       the date chip appears. Until then they display in the order they sit in
       the array (newest at the top), which is already correct.
-- [ ] **redredgavin's part of the About story** — `studio.story[1].text`. His
-      byline and avatar are already wired up; just replace the TODO text. Delete
-      the whole entry if he'd rather not have one.
 - [ ] `studio.email` — a business/press contact address
 - [ ] Optional socials in `links`: `roblox`, `youtube`, `tiktok`, `twitter`.
       Empty ones simply don't render, so leaving them blank is fine.
-- [ ] Patch notes in the game's `updates` array — the Updates page is empty until
-      there's at least one
 - [ ] Optional local cover art at `assets/games/blacksteel-arms-tycoon.png`
       (loads faster than Roblox's CDN and is the fallback if Roblox is down)
-- [ ] Replace the placeholder URLs in `robots.txt` and `sitemap.xml`
-- [ ] Change the `og:image` meta tags to absolute `https://` URLs once you have a
-      domain — Discord and X need the full URL to render a link preview
 - [ ] Check `assets/logo.svg` against the original mascot and say if the likeness
       needs adjusting
 
