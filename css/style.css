@@ -468,6 +468,29 @@ details.expired-wrap[open] summary::before { content: "\25BE  "; }
 .filter-bar button:hover { color: var(--text); border-color: var(--border-str); }
 .filter-bar button.is-active { background: var(--gold); border-color: var(--gold); color: #0A0A0B; }
 
+/* ------------------------------------------------- what we do cards -- */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 22px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.service:hover { border-color: var(--border-str); transform: translateY(-3px); }
+.service h3 { margin: 0; }
+.service p { color: var(--muted); font-size: 0.95rem; margin: 0; flex: 1; }
+
 /* -------------------------------------------------- About page story -- */
 
 .story { display: grid; gap: 34px; max-width: 70ch; margin: 34px 0 48px; }

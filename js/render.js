@@ -358,6 +358,32 @@
         .join("");
     },
 
+    /* "What we do" cards - the studio is not Roblox-only */
+    services(host) {
+      const services = d.services || [];
+      if (!services.length) {
+        const section = host.closest("section");
+        return section ? section.remove() : host.remove();
+      }
+
+      host.className = "service-grid";
+      host.innerHTML = services
+        .map((s) => {
+          const link =
+            s.link && s.linkLabel
+              ? `<a class="btn btn--ghost btn--sm" href="${NG.esc(s.link)}">${NG.text(
+                  s.linkLabel
+                )}</a>`
+              : "";
+          return `<article class="service">
+            <h3>${NG.text(s.title)}</h3>
+            <p>${NG.text(s.body)}</p>
+            ${link}
+          </article>`;
+        })
+        .join("");
+    },
+
     /* the About page story - one block per person, byline read from `team` */
     async story(host) {
       const story = d.studio?.story || [];

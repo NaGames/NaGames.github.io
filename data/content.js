@@ -15,7 +15,7 @@ window.NAGAMES = {
   studio: {
     name: "NaGames",
     // Shown under the big heading on the homepage. Keep it short and dry.
-    tagline: "We make Roblox games. Some of them are good.",
+    tagline: "We make Roblox games and Minecraft add-ons. Some of them are good.",
     founded: "2018",
     email: "TODO@example.com",    // business / press contact
 
@@ -77,6 +77,34 @@ window.NAGAMES = {
   // Your Roblox group id, read from the group link above. Used to pull the
   // live member count. Leave "" to fall back to the manual number below.
   groupId: "34650790",
+
+  /* ---------------------------------------------------- what we actually do --
+     The "What we do" cards on the homepage. Add, remove or reorder freely -
+     set the array to [] and the whole section disappears.
+
+     link / linkLabel are optional. Leave link as "" and the card renders
+     with no button, which is right for something you do but have nothing
+     to point at yet.                                                        */
+  services: [
+    {
+      title: "Roblox games",
+      body:
+        "Full experiences built in Roblox Studio, from the first block to " +
+        "live updates and the people playing them. Blacksteel Arms Tycoon is " +
+        "the one we are heads-down on right now.",
+      link: "games.html",
+      linkLabel: "See the games",
+    },
+    {
+      title: "Minecraft Bedrock add-ons",
+      body:
+        "Add-ons for Minecraft Bedrock: custom behaviour, entities, items and " +
+        "the scripting that holds it together. It is where a lot of this " +
+        "started, and we never really stopped.",
+      link: "",                  // TODO: a download page or MCPEDL link, if you have one
+      linkLabel: "",
+    },
+  ],
 
   /* ------------------------------------------------------- headline stats --
      Shown as the strip under the homepage hero. Delete any row you do not
