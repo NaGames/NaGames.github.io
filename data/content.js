@@ -132,11 +132,19 @@ window.NAGAMES = {
         "Then there is the rest of the map: boss raids against the Rogue Juggernaut, a capture " +
         "zone worth +20% income if you can hold it, supply drops guarded by drones, and " +
         "vehicles from a Patrol Jeep up to a Scout Helicopter off your own rooftop helipad. " +
-        "Rebirth resets you for permanent multipliers and new unlocks. PvP is opt-in.",
+        "Rebirth resets you for permanent multipliers and new unlocks. PvP is opt-in.\n\n" +
+
+        "You are not on your own either. Hire a squad of up to six soldiers, raid other " +
+        "players for the war chest in their outpost, and dig in behind sandbags and a gate " +
+        "gun when they come for yours. Send a convoy out and it keeps earning while you " +
+        "are logged off.",
 
       // Optional. Shown as a list on the game page. Delete the array to hide it.
       features: [
         "Build production lines across six weapon wings",
+        "Recruit a squad of up to 6 soldiers and give them orders",
+        "Raid other players for their war chest, and fortify your own base",
+        "Send convoys that keep earning while you are offline",
         "Clear jams, run QC and hand-build at the bench",
         "Equip every gun you make, with 25 skins",
         "Boss raids against the Rogue Juggernaut",
@@ -160,12 +168,16 @@ window.NAGAMES = {
       // list at the bottom instead of being deleted, because players search
       // for expired codes too.
       codes: [
-        // --- working as of v0.8 ---
+        // --- working as of v0.9 ---
+        { code: "SQUADUP",  reward: "30 minutes of income, plus 2x Line Speed for 30 minutes", expired: false },
+        { code: "WARCHEST", reward: "100 Gold, 2 wheel spins and the Desert finish", expired: false },
         { code: "COURIER",  reward: "30 minutes of cash, plus 2x Cash for 30 minutes", expired: false },
         { code: "GUNSMITH", reward: "15 Blueprints, 50 Gold and the Crimson finish (Gold instead if you already own Crimson)", expired: false },
         { code: "OVERHAUL", reward: "100 Gold, 2 wheel spins and 2x Line Speed for 15 minutes", expired: false },
-        { code: "LIFTOFF",  reward: "30 minutes of income, plus 2x Cash for 30 minutes", expired: false },
-        { code: "CONVOY",   reward: "100 Gold and 2 wheel spins", expired: false },
+
+        // --- expired at v0.9 ---
+        { code: "LIFTOFF",  reward: "30 minutes of income, plus 2x Cash for 30 minutes", expired: true },
+        { code: "CONVOY",   reward: "100 Gold and 2 wheel spins", expired: true },
 
         // --- expired at v0.8 ---
         { code: "SEISMIC",  reward: "Reward not recorded", expired: true },
@@ -186,6 +198,85 @@ window.NAGAMES = {
          sections  [{ heading, notes }] for big ones. Use one or the other.
                                                                               */
       updates: [
+        {
+          date: "",                      // TODO: when did v0.9 ship?
+          version: "v0.9",
+          title: "Troops & Raids",
+          summary: "Hire a squad, raid other players, and send convoys out while you are offline.",
+          sections: [
+            {
+              heading: "Troops",
+              notes: [
+                "Recruit soldiers: walk up to a patrol soldier and hold E to hire him. Build a squad of up to 6",
+                "Orders: tell your squad to follow you or guard your base",
+                "Stripes and promotions: troops that win fights earn stripes and get promoted",
+                "Medics revive downed troops. Lose a troop in battle and he is gone for good",
+                "A squad card on your screen shows your troops and what they are doing",
+                "Troops ride along in your vehicle's seats",
+                "Patrol soldiers now fight back when you shoot them, and they guard the export roads",
+              ],
+            },
+            {
+              heading: "Raids and base defences",
+              notes: [
+                "Raid other players: steal the war chest from their outpost and carry it back to your vault for cash",
+                "Defend your base: hold off a raid and earn a bonus",
+                "4 new defences: Sandbag Line, Barbed Wire, Guard Tower at Rebirth 3, and the Gate Gun at Rebirth 7",
+                "You can man the Gate Gun yourself",
+              ],
+            },
+            {
+              heading: "Convoys and Collector's guns",
+              notes: [
+                "Convoys: send a truck on a 1, 4 or 8 hour run. It keeps driving while you are offline",
+                "Watch your black CONVOY truck leave and come back",
+                "Collector's Edition guns: a rare surprise gun can roll off your line. Grab it within 2 minutes, then show it off on your trophy wall",
+                "Turn on Roblox notifications to hear when your convoy is back",
+              ],
+            },
+            {
+              heading: "Make it yours",
+              notes: [
+                "Factory paint: themes from rebirths, for Gold and in the shop, plus custom colours from Rebirth 5",
+                "All 25 gun skins redone with real patterns and designs",
+                "Try on skins before you equip them",
+                "Inspect your gun with F, D-pad down, or the INSPECT button",
+                "Gift passes to anyone in your server",
+              ],
+            },
+            {
+              heading: "Better minigames",
+              notes: [
+                "Rush Order and QC Inspection rebuilt - use Space. Rush Orders can now hit 100%",
+                "Proof Range overhaul and a new medal screen",
+                "Exports: a ready light, pick your buyer, hold the zone to unload",
+                "Clearing jams and pulling the wing lever feel far more satisfying",
+                "The Requisition Wheel is now a real spinning wheel with a big prize card",
+              ],
+            },
+            {
+              heading: "Sound",
+              notes: [
+                "Footsteps that match the ground - metal, gravel, concrete, wood - for players, troops and workers",
+                "A hit sound when you get shot, and new outdoor ambience",
+                "Full audio rebalance: nothing too loud, and rewards are easier to hear",
+              ],
+            },
+            {
+              heading: "Quality of life",
+              notes: [
+                "Faster walking (20) and sprinting (30)",
+                "Faster join, simpler intro cards, and the Field Guide shows you the way",
+                "Keyboard and controller work at the same time",
+                "More drones around the map, and a redone rebirth cutscene",
+                "Smoother menus with no more lost clicks, and lighter on weaker phones",
+                "5 new badges to earn",
+                "Fixed flickering roads and textures, plus lots of map and screen fixes",
+              ],
+            },
+          ],
+        },
+
         {
           date: "",                      // TODO: when did v0.8 ship?
           version: "v0.8",
