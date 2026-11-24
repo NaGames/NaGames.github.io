@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-11-23T16:00:46.647Z",
+  "generatedAt": "2026-11-24T15:55:18.217Z",
   "games": {
     "blacksteel-arms-tycoon": {
       "universeId": 6292430419,
       "placeId": "18571684934",
       "name": "Blacksteel Arms Tycoon [UPDATE V0.9!!]",
       "playing": 0,
-      "visits": 435,
+      "visits": 440,
       "favorites": 8,
       "maxPlayers": 8,
       "thumbnail": "https://tr.rbxcdn.com/180DAY-5d086291621affac427980fbb3c58e80/768/432/Image/Png/noFilter",
-      "fetchedAt": "2026-11-23T16:00:46.647Z"
+      "fetchedAt": "2026-11-24T15:55:18.217Z"
     }
   },
   "group": {
     "id": "34650790",
     "name": "NaGames",
     "memberCount": 6,
-    "fetchedAt": "2026-11-23T16:00:46.311Z"
+    "fetchedAt": "2026-11-24T15:55:17.502Z"
   },
   "team": {
     "60849547": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-EFF1BD6C764377FF9C4DA767A4EC446F-Png/150/150/AvatarHeadshot/Png/noFilter",
     "196456518": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-6BA5D9A88BAC17CA493CA983849919F2-Png/150/150/AvatarHeadshot/Png/noFilter"
   },
   "totals": {
-    "visits": 435,
+    "visits": 440,
     "games": 1
   }
 }
